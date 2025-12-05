@@ -44,16 +44,18 @@
 
     /* UP photo */
     .foto-up {
-      max-width: 250px;
-      border-radius: 50%;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
+      width: 100%;           /* Ocupa todo el ancho del contenedor */
+      max-width: 600px;      /* Máximo ancho de 600px */
+      height: auto;          /* Mantiene la proporción original de la foto */
+      border-radius: 0;      /* Sin bordes redondeados */
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra más marcada */
       display: block;
-      margin: 20px auto;
+      margin: 30px auto;     /* Centrada y con más espacio arriba/abajo */
+      transition: transform 0.3s ease;
     }
 
     .foto-up:hover {
-      transform: scale(1.05);
+      transform: scale(1.03); /* Ligera ampliación al pasar el mouse */
     }
 
     /* Section titles */
@@ -224,6 +226,8 @@
               <li>Excel: Advanced (Macros, Pivot Tables, Charts)</li>
               <li>Advanced Stata and R: Database management, statistical tests, chart generation</li>
               <li>Intermediate Power BI and Matlab</li>
+              <li>Python: Intermediate (con un par de cosas)</li>
+              <li>Julia: Intermediate</li>
               <li>Advanced Microsoft Office 2021</li>
             </ul>
           </div>
@@ -242,7 +246,8 @@
           <h3>Additional Information</h3>
           <ul>
             <li>Outstanding results in courses on research methods and macroeconomics.</li>
-            <li>Participation and recognition of a Research Proposal on minimum wage increases in different provinces of Canada.</li>
+            <li>Participation and recognition of a Research Proposal on minimum wage increases in different provinces of Canada using Dif-in-Dif.</li>
+            <li>Base project on insecurity and perception of insecurity.</li>
           </ul>
         </div>
         <div class="references-content">
