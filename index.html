@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -31,7 +31,7 @@
     /* NAVBAR */
     .navbar {
       background: #fff;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     }
 
     /* HERO */
@@ -46,7 +46,7 @@
     #hero img {
       width: 160px;
       border-radius: 50%;
-      box-shadow: 0 10px 25px rgba(0,0,0,.4);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, .4);
     }
 
     /* SECTIONS */
@@ -91,258 +91,268 @@
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Matias Buendia</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#studies">Studies</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#extras">Extras</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Matias Buendia</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#studies">Studies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#extras">Extras</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="container text-center" data-aos="zoom-in">
-    <img src="foto_1.jpg" alt="Matias Buendia">
-    <h1 class="display-4 mt-3 fw-bold">Matias Buendia</h1>
-    <p class="lead">Economics Student · Research Enthusiast · Sustainable Development</p>
-    <a href="Matias_Buendia_CV_2025.pdf" class="btn btn-light mt-3" download>Download CV (PDF)</a>
-  </div>
-</section>
+          <!-- LANGUAGE DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown">
+              Language
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('es')">Español</a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('pt')">Português</a></li>
+            </ul>
+          </li>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="container" data-aos="fade-up">
-    <div class="section-title text-center">
-      <h2>About Me</h2>
-    </div>
-    <p class="text-center">
-      I'm a 9th-semester Economics student at Universidad del Pacífico. Experienced in research projects on development,
-      analyzing macroeconomic and microeconomic trends, and passionate about sustainable economic growth.
-    </p>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="bg-light">
-  <div class="container" data-aos="fade-up">
-    <div class="section-title text-center">
-      <h2>Pre-professional Experience</h2>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <h5>Instituto Peruano de Economía</h5>
-        <p><em>Intern | May 2024 – Present</em></p>
-        <ul>
-          <li>Drafted reports on regional economic performance and competitiveness.</li>
-          <li>Designed infographics to communicate complex insights.</li>
-          <li>Maintained databases for formal employment and electricity usage.</li>
-          <li>Contributed to INCORE, IRGB, and IRESA publications.</li>
-          <li>Participated in a GDP nowcasting project.</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item">
-        <h5>MEDLIFE UP</h5>
-        <p><em>Director of Research and Development | Mar 2023 – Jul 2025</em></p>
-        <ul>
-          <li>Conducted research on social issues impacting the national economy.</li>
-          <li>Edited over 30 research pieces and reports.</li>
-          <li>Structured departmental work plans.</li>
-          <li>Assisted in volunteer activities with social impact.</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item">
-        <h5>Acción Sostenible UP</h5>
-        <p><em>Research Manager | Jun 2023 – Jul 2025</em></p>
-        <ul>
-          <li>Conducted research on environmental topics.</li>
-          <li>Authored news articles, research reports, and academic papers.</li>
         </ul>
       </div>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- STUDIES -->
-<section id="studies">
-  <div class="container" data-aos="fade-up">
-    <div class="section-title text-center">
-      <h2>Studies</h2>
-    </div>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container text-center" data-aos="zoom-in">
+      <img src="foto_1.jpg" alt="Matias Buendia">
 
-    <div class="timeline">
-      <div class="timeline-item">
-        <h5>Universidad del Pacífico</h5>
-        <p><em>Economics | Jan 2021 – Present</em></p>
-        <ul>
-          <li>Faculty of Economics and Finance, Top 20%.</li>
-          <li>Participation in research projects and academic programs.</li>
-        </ul>
+      <!-- ESPAÑOL -->
+      <div data-lang="es">
+        <h1 class="display-4 mt-3 fw-bold">Matias Buendia Ugarriza</h1>
+        <p class="lead">Estudiante de Economía (9no semestre) · Investigación · Desarrollo Sostenible</p>
+        <a id="cvDownload" href="Matias_Buendia_CV_2025_ES.pdf" class="btn btn-light mt-3" download>Descargar CV (PDF)</a>
       </div>
 
-      <div class="timeline-item">
-        <h5>Queen's University – Smith School of Business</h5>
-        <p><em>Exchange Program | Aug 2024 – Dec 2024</em></p>
-        <ul>
-          <li>International academic program in Economics, Business, and Development.</li>
-          <li>Authored research papers and developed a research proposal.</li>
-          <li>Active member of MEDLIFE Queens.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="bg-light">
-  <div class="container" data-aos="fade-up">
-    <div class="section-title text-center">
-      <h2>Skills</h2>
-    </div>
-
-    <div class="row">
-
-      <!-- LANGUAGES -->
-      <div class="col-lg-6 mb-4">
-        <h4 class="fw-bold">Languages</h4>
-
-        <p><strong>Advanced English (oral and written)</strong></p>
-        <ul>
-          <li>TOEFL iBT, Educational Testing Service (ETS) (2023)</li>
-          <li>First Certificate in English (FCE), Cambridge English (2020)</li>
-          <li>Advanced V, Upper Intermediate, Euroidiomas — <em>With honors</em> (2019)</li>
-        </ul>
-
-        <p class="mt-3"><strong>Advanced Portuguese (oral and written)</strong></p>
-        <ul>
-          <li>Avançado IV, Centro Cultural Brasil–Perú (2019)</li>
-        </ul>
+      <!-- ENGLISH -->
+      <div data-lang="en" style="display:none;">
+        <h1 class="display-4 mt-3 fw-bold">Matias Buendia Ugarriza</h1>
+        <p class="lead">Economics Student · Research Enthusiast · Sustainable Development</p>
+        <a id="cvDownload" href="Matias_Buendia_CV_2025_EN.pdf" class="btn btn-light mt-3" download>Download CV (PDF)</a>
       </div>
 
-      <!-- IT -->
-
-<div class="col-lg-6 mb-4">
-  <h4 class="fw-bold">IT & Technical Skills</h4>
-
-  <p>
-    <strong>Excel Advanced Training</strong><br>
-    <em>INFOPUCP — Sep 2020 – Dec 2020</em>
-  </p>
-  <ul>
-    <li>Advanced Excel course</li>
-    <li>Macros and Pivot Tables</li>
-    <li>Charts and data visualization</li>
-  </ul>
-
-  <p class="mt-3"><strong>Stata & R — Advanced </strong></p>
-  <ul>
-    <li>Database management, data cleaning, statistical tests (OLS, IV, DiD), regression analysis, and chart generation</li>
-    <li>Implement econometric and causal inference models with reproducible analysis pipelines.</li>
-  </ul>
-
-  <p class="mt-3"><strong>Python — Intermediate-Advanced </strong></p>
-  <ul>
-    <li>Build reproducible data analysis pipelines for cleaning, transforming, and merging datasets efficiently</li>
-    <li>Implement statistical and econometric models with interpretation and visualization of results</li>
-    <li>Implementation of basic econometric and statistical models</li>
-  </ul>
-
-  <p class="mt-3"><strong>Julia — Intermediate</strong></p>
-  <ul>
-    <li>Perform numerical computing and matrix operations for data analysis and simulations</li>
-    <li>Conduct data manipulation and statistical modeling with reproducible workflows</li>
-    <li>Optimization and simulation exercises for economic models</li>
-  </ul>
-
-  <p class="mt-3"><strong>Power BI — Intermediate</strong></p>
-  <ul>
-    <li>Creation of interactive dashboards</li>
-    <li>Data transformation using Power Query</li>
-    <li>Basic DAX measures for descriptive analysis</li>
-  </ul>
-
-  <p class="mt-3"><strong>Matlab — Intermediate</strong></p>
-  <ul>
-    <li>Matrix-based computations and data visualization</li>
-    <li>Implementation of numerical methods</li>
-    <li>Simulation of dynamic economic models</li>
-  </ul>
-
-  <p class="mt-3"><strong>EViews — Intermediate</strong></p>
-  <ul>
-    <li>Time series management and analysis, including data control and basic econometric modeling</li>
-  </ul>
-
-<p class="mt-3"><strong>Advanced Microsoft Office 2021</strong></p>
-
-</div>
-
-
-<!-- EXTRAS -->
-<section id="extras">
-  <div class="container" data-aos="fade-up">
-    <div class="section-title text-center">
-      <h2>Extras & References</h2>
+      <!-- PORTUGUÊS -->
+      <div data-lang="pt" style="display:none;">
+        <h1 class="display-4 mt-3 fw-bold">Matias Buendia Ugarriza</h1>
+        <p class="lead">Estudante de Economia · Pesquisa · Desenvolvimento Sustentável</p>
+        <a id="cvDownload" href="Matias_Buendia_CV_2025_PT.pdf" class="btn btn-light mt-3" download>Baixar CV (PDF)</a>
+      </div>
     </div>
+  </section>
 
-    <h5>Additional Information</h5>
-    <ul>
-      <li>Outstanding results in research methods and macroeconomics.</li>
-      <li>Research proposal on minimum wage increases in Canadian provinces using Dif-in-Dif.</li>
-      <li>Base project on insecurity and perception of insecurity.</li>
-    </ul>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container" data-aos="fade-up">
 
-    <h5 class="mt-4">References</h5>
-    <ul>
-      <li>
-        <strong>Luis Llosa Velasquez</strong><br>
-        Universidad del Pacífico – Professor<br>
-        Email: <a href="mailto:lg.llosav@up.edu.pe">lg.llosav@up.edu.pe</a>
-      </li>
-      <li class="mt-3">
-        <strong>Paola Herrera Gaspar</strong><br>
-        Instituto Peruano de Economía – Senior Economist<br>
-        Email: <a href="mailto:pherrera@ipe.org.pe">pherrera@ipe.org.pe</a>
-      </li>
-    </ul>
-  </div>
-</section>
+      <!-- ESPAÑOL -->
+      <div data-lang="es">
+        <div class="section-title text-center">
+          <h2>Sobre mí</h2>
+        </div>
+        <p>
+          Estudiante de Economía (9no semestre) en la Universidad del Pacífico, con experiencia en investigación económica,
+          análisis de datos y desarrollo sostenible. Interés en investigación aplicada, políticas públicas y crecimiento
+          económico sostenible.
+        </p>
+      </div>
 
-<!-- CONTACT -->
-<section id="contact" class="bg-light">
-  <div class="container text-center" data-aos="fade-up">
-    <div class="section-title">
-      <h2>Contact</h2>
+      <!-- ENGLISH -->
+      <div data-lang="en" style="display:none;">
+        <div class="section-title text-center">
+          <h2>About Me</h2>
+        </div>
+        <p>
+          I'm a 9th-semester Economics student at Universidad del Pacífico, experienced in economic research,
+          data analysis, and sustainable development. Interested in applied research, public policy, and sustainable
+          economic growth.
+        </p>
+      </div>
+
+      <!-- PORTUGUÊS -->
+      <div data-lang="pt" style="display:none;">
+        <div class="section-title text-center">
+          <h2>Sobre mim</h2>
+        </div>
+        <p>
+          Estudante de Economia (9º semestre) na Universidad del Pacífico, com experiência em pesquisa econômica, análise
+          de dados e desenvolvimento sustentável. Interesse em pesquisa aplicada, políticas públicas e crescimento
+          econômico sustentável.
+        </p>
+      </div>
+
     </div>
-    <p><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/matias-alonso-buendia-ugarriza-86992128a/">LinkedIn</a></p>
-    <p><i class="bi bi-telephone"></i> +51 999 093 422</p>
-    <p><i class="bi bi-geo-alt"></i> Lima, Peru</p>
-    <p><i class="bi bi-envelope"></i> <a href="mailto:matalonsobu2004@gmail.com">matalonsobu2004@gmail.com</a></p>
-  </div>
-</section>
+  </section>
 
-<footer class="text-center">
-  © 2025 Matias Buendia
-</footer>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="bg-light">
+    <div class="container" data-aos="fade-up">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>AOS.init();</script>
+      <!-- ESPAÑOL -->
+      <div data-lang="es">
+        <div class="section-title text-center">
+          <h2>Pre-professional Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h5>Instituto Peruano de Economía</h5>
+            <p><em>Practicante | May 2024 – a la fecha</em></p>
+            <ul>
+              <li>Elaboración de reportes sobre desempeño económico regional y competitividad.</li>
+              <li>Diseño de infografías para difusión de resultados económicos.</li>
+              <li>Mantenimiento de bases de datos de empleo formal y consumo eléctrico.</li>
+              <li>Participación en publicaciones INCORE, IRGB e IRESA.</li>
+              <li>Apoyo en proyecto de nowcasting del PBI.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <h5>MEDLIFE UP</h5>
+            <p><em>Director de Investigación y Desarrollo | Mar 2023 – Jul 2025</em></p>
+            <ul>
+              <li>Investigación sobre problemáticas sociales y su impacto económico.</li>
+              <li>Edición de más de 30 investigaciones y reportes.</li>
+              <li>Planificación y coordinación del área de Investigación y Desarrollo.</li>
+              <li>Participación en voluntariados de impacto social.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+      <!-- ENGLISH -->
+      <div data-lang="en" style="display:none;">
+        <div class="section-title text-center">
+          <h2>Pre-professional Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h5>Instituto Peruano de Economía</h5>
+            <p><em>Intern | May 2024 – Present</em></p>
+            <ul>
+              <li>Drafted reports on regional economic performance and competitiveness.</li>
+              <li>Designed infographics to communicate complex insights.</li>
+              <li>Maintained databases for formal employment and electricity usage.</li>
+              <li>Contributed to INCORE, IRGB, and IRESA publications.</li>
+              <li>Participated in a GDP nowcasting project.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <h5>MEDLIFE UP</h5>
+            <p><em>Director of Research and Development | Mar 2023 – Jul 2025</em></p>
+            <ul>
+              <li>Conducted research on social issues impacting the national economy.</li>
+              <li>Edited over 30 research pieces and reports.</li>
+              <li>Structured departmental work plans.</li>
+              <li>Assisted in volunteer activities with social impact.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- PORTUGUÊS -->
+      <div data-lang="pt" style="display:none;">
+        <div class="section-title text-center">
+          <h2>Experiência Pré-Profissional</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h5>Instituto Peruano de Economía</h5>
+            <p><em>Estagiário | Mai 2024 – atualmente</em></p>
+            <ul>
+              <li>Elaboração de relatórios sobre desempenho econômico regional e competitividade.</li>
+              <li>Criação de infográficos para divulgação de resultados econômicos.</li>
+              <li>Manutenção de bases de dados de emprego formal e consumo elétrico.</li>
+              <li>Participação em publicações INCORE, IRGB e IRESA.</li>
+              <li>Apoio em projeto de nowcasting do PIB.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <h5>MEDLIFE UP</h5>
+            <p><em>Diretor de Pesquisa e Desenvolvimento | Mar 2023 – Jul 2025</em></p>
+            <ul>
+              <li>Pesquisa sobre problemas sociais e seu impacto econômico.</li>
+              <li>Edição de mais de 30 pesquisas e relatórios.</li>
+              <li>Planejamento e coordenação da área de Pesquisa e Desenvolvimento.</li>
+              <li>Participação em voluntariados de impacto social.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-light">
+    <div class="container text-center" data-aos="fade-up">
+      <!-- ESPAÑOL -->
+      <div data-lang="es">
+        <div class="section-title">
+          <h2>Contacto</h2>
+        </div>
+        <p><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/matias-alonso-buendia-ugarriza-86992128a/">LinkedIn</a></p>
+        <p><i class="bi bi-telephone"></i> +51 999 093 422</p>
+        <p><i class="bi bi-geo-alt"></i> Lima, Perú</p>
+        <p><i class="bi bi-envelope"></i> <a href="mailto:matalonsobu2004@gmail.com">matalonsobu2004@gmail.com</a></p>
+      </div>
+
+      <!-- ENGLISH -->
+      <div data-lang="en" style="display:none;">
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+        <p><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/matias-alonso-buendia-ugarriza-86992128a/">LinkedIn</a></p>
+        <p><i class="bi bi-telephone"></i> +51 999 093 422</p>
+        <p><i class="bi bi-geo-alt"></i> Lima, Peru</p>
+        <p><i class="bi bi-envelope"></i> <a href="mailto:matalonsobu2004@gmail.com">matalonsobu2004@gmail.com</a></p>
+      </div>
+
+      <!-- PORTUGUÊS -->
+      <div data-lang="pt" style="display:none;">
+        <div class="section-title">
+          <h2>Contato</h2>
+        </div>
+        <p><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/matias-alonso-buendia-ugarriza-86992128a/">LinkedIn</a></p>
+        <p><i class="bi bi-telephone"></i> +51 999 093 422</p>
+        <p><i class="bi bi-geo-alt"></i> Lima, Peru</p>
+        <p><i class="bi bi-envelope"></i> <a href="mailto:matalonsobu2004@gmail.com">matalonsobu2004@gmail.com</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="text-center">
+    © 2025 Matias Buendia
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function changeLanguage(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => el.style.display = 'none');
+      document.querySelectorAll(`[data-lang="${lang}"]`).forEach(el => el.style.display = 'block');
+
+      // Cambiar CV
+      const cv = document.querySelector('#hero a[id="cvDownload"]');
+      if (lang === 'es') cv.href = 'Matias_Buendia_CV_2025_ES.pdf';
+      if (lang === 'en') cv.href = 'Matias_Buendia_CV_2025_EN.pdf';
+      if (lang === 'pt') cv.href = 'Matias_Buendia_CV_2025_PT.pdf';
+    }
+  </script>
 </body>
+
 </html>
